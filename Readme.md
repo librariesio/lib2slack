@@ -2,6 +2,8 @@
 
 Sinatra app for posting to slack whenever a new version of a dependency is discovered by [Libraries.io](https://libraries.io) using the repository web hook feature.
 
+<img width="717" alt="screen shot 2016-06-10 at 11 10 41 am" src="https://cloud.githubusercontent.com/assets/1060/15961333/115a4744-2efc-11e6-97df-3ef6df87bc10.png">
+
 ## Usage
 
 The easiest option is to deploy to heroku with the deploy button below:
