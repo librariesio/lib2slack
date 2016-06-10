@@ -24,7 +24,7 @@ class Lib2Slack < Sinatra::Base
   post '/webhook' do
     content_type :json
 
-    create_issue(@data['repository'], @data['platform'], @data['name'], @data['version'], @data['requirements'])
+    post_to_slack(@data['repository'], @data['platform'], @data['name'], @data['version'], @data['requirements'])
 
     status 200
     body ''
