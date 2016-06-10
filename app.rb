@@ -34,12 +34,11 @@ class Lib2Slack < Sinatra::Base
     return if ENV['SKIP_PRERELEASE'] && prerelease?(platform, version)
     return if satisfied_by_requirements?(requiremnts, version)
 
+    text = "Libraries.io has found that there is a newer version of #{name} that this project depends on.
+More info: https://libraries.io/#{platform.downcase}/#{name}/#{version}"
+
     client = Slack::Web::Client.new
-
-    client.chat_postMessage(channel: ENV['SLACK_CHANNEL'], text: "Upgrade #{name} to version #{version}",
-    "Libraries.io has found that there is a newer version of #{name} that this project depends on.
-
-More info: https://libraries.io/#{platform.downcase}/#{name}/#{version}", as_user: true)
+    client.chat_postMessage(channel: ENV['SLACK_CHANNEL'], text: text, as_user: true)
   end
 
   def satisfied_by_requirements?(requiremnts, version)
