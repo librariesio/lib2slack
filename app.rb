@@ -34,7 +34,7 @@ class Lib2Slack < Sinatra::Base
     return if ENV['SKIP_PRERELEASE'] && prerelease?(platform, version)
     return if satisfied_by_requirements?(requiremnts, version)
 
-    text = "Libraries.io has found that there is a newer version of #{name} that this project depends on.
+    text = "There's a newer version of #{name} that #{repository} depends on.
 More info: https://libraries.io/#{platform.downcase}/#{name}/#{version}"
 
     client = Slack::Web::Client.new
