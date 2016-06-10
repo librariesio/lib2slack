@@ -6,7 +6,7 @@ Slack.configure do |config|
   config.token = ENV['SLACK_API_TOKEN']
 end
 
-class Lib2Issue < Sinatra::Base
+class Lib2Slack < Sinatra::Base
   use Rack::Deflater
 
   configure do

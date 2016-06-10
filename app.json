@@ -1,7 +1,7 @@
 {
-  "name": "Lib2Issues",
-  "description": "Create GitHub Issues from Libraries.io webhooks",
-  "repository": "https://github.com/librariesio/lib2issues",
+  "name": "Lib2Slack",
+  "description": "Post new version notifications to slack from Libraries.io webhooks",
+  "repository": "https://github.com/librariesio/lib2slack",
   "logo": "https://avatars3.githubusercontent.com/u/11243589?v=3&s=400",
   "keywords": ["GitHub", "dependency", "ruby", "update", "Libraries.io"],
   "env": {

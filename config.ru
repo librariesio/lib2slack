@@ -1,3 +1,3 @@
 require './app'
 
-run Lib2Issue
+run Lib2Slack

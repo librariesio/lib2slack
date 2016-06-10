@@ -1,6 +1,6 @@
-# [Lib2Issues](https://libraries.io/github/librariesio/lib2issues)
+# [Lib2Slack](https://libraries.io/github/librariesio/lib2slack)
 
-Sinatra app for creating GitHub issues whenever a new version of a dependency is discovered by [Libraries.io](https://libraries.io) using the repository web hook feature.
+Sinatra app for posting to slack whenever a new version of a dependency is discovered by [Libraries.io](https://libraries.io) using the repository web hook feature.
 
 ## Usage
 
@@ -14,7 +14,7 @@ Then add the url of your app to web hooks section for your repo on https://libra
 
 Or to run it somewhere else, clone it from github:
 
-   git clone https://github.com/librariesio/lib2issues.git
+   git clone https://github.com/librariesio/lib2slack.git
 
 Install dependencies:
 
@@ -22,8 +22,8 @@ Install dependencies:
 
 Setup config environment variables:
 
-    GITHUB_TOKEN=mygithubapitoken
-    GITHUB_LABELS=help wanted,enhancement
+    SLACK_API_TOKEN=myslackapitoken
+    SLACK_CHANNEL=#general
 
 Start the app:
 
@@ -33,8 +33,8 @@ Add the url of your app to web hooks section for your repo on https://libraries.
 
 ## Development
 
-Source hosted at [GitHub](https://github.com/librariesio/lib2issues).
-Report issues/feature requests on [GitHub Issues](https://github.com/librariesio/lib2issues/issues). Follow us on Twitter [@librariesio](https://twitter.com/librariesio). We also hangout on [Gitter](https://gitter.im/librariesio/support).
+Source hosted at [GitHub](https://github.com/librariesio/lib2slack).
+Report issues/feature requests on [GitHub Issues](https://github.com/librariesio/lib2slack/issues). Follow us on Twitter [@librariesio](https://twitter.com/librariesio). We also hangout on [Gitter](https://gitter.im/librariesio/support).
 
 ### Getting Started
 
@@ -62,4 +62,4 @@ rbenv global 2.3.1
 
 ## Copyright
 
-Copyright (c) 2016 Andrew Nesbitt. See [LICENSE](https://github.com/librariesio/lib2issues/blob/master/LICENSE) for details.
+Copyright (c) 2016 Andrew Nesbitt. See [LICENSE](https://github.com/librariesio/lib2slack/blob/master/LICENSE) for details.
