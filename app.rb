@@ -32,7 +32,7 @@ class Lib2Slack < Sinatra::Base
 
   def post_to_slack(repository, platform, name, version, requiremnts)
     return if ENV['SKIP_PRERELEASE'] && prerelease?(platform, version)
-    return if satisfied_by_requirements?(requiremnts, version)
+    return if satisfied_by_requirements?(requiremnts, version, platform)
 
     text = "There's a newer version of #{name} that #{repository} depends on.
 More info: https://libraries.io/#{platform.downcase}/#{name}/#{version}"
@@ -41,10 +41,10 @@ More info: https://libraries.io/#{platform.downcase}/#{name}/#{version}"
     client.chat_postMessage(channel: ENV['SLACK_CHANNEL'], text: text, as_user: true)
   end
 
-  def satisfied_by_requirements?(requiremnts, version)
+  def satisfied_by_requirements?(requiremnts, version, platform = nil)
     return false if requiremnts.nil? || requiremnts.empty?
     requiremnts.none? do |requirement|
-      SemanticRange.gtr(version, requirement)
+      SemanticRange.gtr(version, requirement, false, platform)
     end
   end
 
