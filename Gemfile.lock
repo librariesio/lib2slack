@@ -36,7 +36,7 @@ GEM
       json
       websocket-driver
     thread_safe (0.3.5)
-    tilt (2.0.5)
+    tilt (2.0.6)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     unicorn (5.2.0)
@@ -61,4 +61,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.7
+   1.14.2
