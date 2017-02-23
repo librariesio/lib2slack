@@ -12,8 +12,8 @@ GEM
     faraday_middleware (0.11.0.1)
       faraday (>= 0.7.4, < 1.0)
     gli (2.15.0)
-    hashie (3.5.3)
-    i18n (0.8.0)
+    hashie (3.5.4)
+    i18n (0.8.1)
     json (2.0.3)
     kgio (2.11.0)
     minitest (5.10.1)
@@ -35,7 +35,7 @@ GEM
       hashie
       json
       websocket-driver
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     tilt (2.0.6)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -61,4 +61,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.14.2
+   1.14.4
