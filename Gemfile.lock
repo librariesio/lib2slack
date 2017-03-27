@@ -37,7 +37,7 @@ GEM
       websocket-driver
     thread_safe (0.3.6)
     tilt (2.0.7)
-    tzinfo (1.2.2)
+    tzinfo (1.2.3)
       thread_safe (~> 0.1)
     unicorn (5.2.0)
       kgio (~> 2.6)
