@@ -46,6 +46,8 @@ More info: https://libraries.io/#{platform.downcase}/#{name}/#{version}"
     requiremnts.none? do |requirement|
       SemanticRange.gtr(version, requirement, false, platform)
     end
+  rescue
+    false
   end
 
   def prerelease?(platform, version)
