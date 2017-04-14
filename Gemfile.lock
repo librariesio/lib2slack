@@ -14,7 +14,7 @@ GEM
     gli (2.16.0)
     hashie (3.5.5)
     i18n (0.8.1)
-    json (2.0.3)
+    json (2.0.4)
     kgio (2.11.0)
     minitest (5.10.1)
     multipart-post (2.0.0)
